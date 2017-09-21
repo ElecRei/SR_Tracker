@@ -18,5 +18,6 @@ That's it for now because if I keep going I'll too many things to this project a
 + *9/21/2017*
   + Repo Created
   + Readme Updated
+  + Tracker JS file uploaded
 
 
