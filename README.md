@@ -20,5 +20,6 @@ That's it for now because if I keep going I'll too many things to this project a
   + Readme Updated
   + Tracker JS file uploaded
   + Main HTML file uploaded
+  + HTML and JS file update
 
 
