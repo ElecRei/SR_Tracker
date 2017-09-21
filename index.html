@@ -3,6 +3,16 @@
     <head>
         <title>SR Tracker</title>
         
+        <style>
+        
+        </style>
+        
+        <script
+          src="http://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+        </script>
+        
         <!-- JS file for tacker functionality -->
         <script src="tracker.js"></script>
         
@@ -12,7 +22,7 @@
     
         <div id="site_wrapper">
         
-            <form>
+            <form id="form_entry">
                 <fieldset>
                     <legend>Current Comp Stats</legend>
                     BattleTag:<br/>
@@ -20,6 +30,23 @@
                     Skill Rating:<br/>
                     <input type="text" id="input_skillRating" placeholder="0"/><br/>
                     <button type="button" id="submit_form">Submit</button>
+                </fieldset>
+            </form>
+            
+            <div id="output_currentStats">
+            
+                <div id="cs_battleTag"></div>
+                <div id="cs_skillRating"></div>
+                <div id="cs_skillRank"></div>
+
+            </div>
+            
+            <form>
+                <fieldset>
+                    <legend>SR Calculator</legend>
+                    New Skill Rating;<br/>
+                    <input type="text" id="input_newSkillRating" placeholder="0"/><br/>
+                    <button type="button" id="submit_form">Update</button>
                 </fieldset>
             </form>
         

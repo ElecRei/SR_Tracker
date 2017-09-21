@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+    $("#output_currentStats").hide();
    
     var batteTag; // Name used ingame
     var skillRating; // SR number
@@ -6,8 +8,8 @@ $(document).ready(function(){
     
     $("#submit_form").click(function(){
         
-        batteTag = $("#input_battleTag").value;
-        skillRating = $("input_skillRating").value;
+        batteTag = $("#input_battleTag").val();
+        skillRating = $("#input_skillRating").val();
         if(skillRating <= 1499){
             skillRank = "Bronze";
         }
@@ -33,11 +35,19 @@ $(document).ready(function(){
             alert("Error");
         }
         
+        $("#cs_battleTag").append(batteTag);
+        $("#cs_skillRating").append(skillRating);
+        $("#cs_skillRank").append(skillRank);
+        
+        
+        $("#form_entry").hide();
+        $("#output_currentStats").show();
+        
     });
     
     function calcRank(){
         
-        var newSkillRating = $("#newSkillRating").value;
+        var newSkillRating = $("#input_newSkillRating").value;
         
         var convertRank = skillRating - newSkillRating;
         
