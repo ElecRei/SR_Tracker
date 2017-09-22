@@ -88,6 +88,9 @@ $(document).ready(function(){
             alert("Error");
         }
         
+        console.log(skillRank);
+        
+        $("#cs_skillRank").html(skillRank);
     };
     
     $("#submit_newSkill").click(function(){
