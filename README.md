@@ -27,6 +27,8 @@ That's it for now because if I keep going I'll add too many things to this proje
   + Updated JS file - Minor Edit (ElecRei-test-1)
   + Merged (ElecRei-test-1) with the master branch
   + Archived copy of Repo
+  + Created separate branches to work on design and JS code
+  + Create Bulletin Board for notifications
   
 + *9/21/2017*
   + Repo Created
