@@ -85,9 +85,11 @@ $(document).ready(function(){
         // Create convertRank variable to do the math, put the results of that variable
         // into rankDifference to change it into an absolute number (remove negative integers).
         
-        var convertRank = skillRating - newSkillRating;
+        //var convertRank = skillRating - newSkillRating;
         
-        var rankDifference = Math.abs(convertRank);
+        var rankDifference = Math.abs(skillRating - newSkillRating);
+        
+        // Put new result in the skillRating variable.
         
         // Put new result in the skillRating variable.
         
