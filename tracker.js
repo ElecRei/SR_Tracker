@@ -47,17 +47,21 @@ $(document).ready(function(){
     
     function calcRank(){
         
-        var newSkillRating = $("#input_newSkillRating").value;
+        var newSkillRating = $("#input_newSkillRating").val();
+        
+        console.log(newSkillRating);
         
         var convertRank = skillRating - newSkillRating;
         
-        var rankDifference = math.abs(convertRank);
+        var rankDifference = Math.abs(convertRank);
         
         skillRating = newSkillRating;
         
-        $("#skillRating_Output").append(skillRating);
+        $("#cs_skillRating").html(skillRating);
         
-        $("#skillDifference_Output").append(skillRating);
+        console.log(skillRating);
+        
+        $("#skillDifference_Output").html(rankDifference);
         
         if(skillRating <= 1499){
             skillRank = "Bronze";
@@ -85,5 +89,9 @@ $(document).ready(function(){
         }
         
     };
+    
+    $("#submit_newSkill").click(function(){
+        calcRank();
+    });
     
 });
