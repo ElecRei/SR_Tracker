@@ -19,6 +19,7 @@ That's it for now because if I keep going I'll too many things to this project a
   + Branch created to test new changes
   + Updated files committed to new branch (ElecRei-test-1)
   + Updated JS file (ElecRei-test-1)
+  + Updated JS file - Minor Edit (ElecRei-test-1)
 + *9/21/2017*
   + Repo Created
   + Readme Updated
