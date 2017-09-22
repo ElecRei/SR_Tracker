@@ -79,6 +79,16 @@ $(document).ready(function(){
         
         $("#skillDifference_Output").html(rankSign + rankDifference);
         
+        if(document.getElementById('skillDifference_Output').innerHTML.indexOf("-")){
+            $("#skillDifference_Output").css("color","green");
+        }
+        else if(document.getElementById('skillDifference_Output').innerHTML.indexOf("+")){
+            $("#skillDifference_Output").css("color","red");
+        }
+        else {
+            $("#skillDifference_Output").css("color","black");
+        }
+        
         if(skillRating <= 1499){
             skillRank = "Bronze";
         }
