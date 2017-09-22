@@ -34,19 +34,23 @@
             </form>
             
             <div id="output_currentStats">
-            
-                <div id="cs_battleTag"></div>
-                <div id="cs_skillRating"></div>
-                <div id="cs_skillRank"></div>
+                <fieldset>
+                    <legend>Updated Comp Stats</legend>
+                    <div id="cs_battleTag"></div>
+                    <div id="cs_skillRating"></div>
+                    <div id="cs_skillRank"></div>
+                    Skill Rating Difference:<br>
+                    <div id="skillDifference_Output"></div>
+                </fieldset>
 
             </div>
             
-            <form>
+            <form id="form_newSkill">
                 <fieldset>
                     <legend>SR Calculator</legend>
                     New Skill Rating;<br/>
                     <input type="text" id="input_newSkillRating" placeholder="0"/><br/>
-                    <button type="button" id="submit_form">Update</button>
+                    <button type="button" id="submit_newSkill">Update</button>
                 </fieldset>
             </form>
         

@@ -47,17 +47,47 @@ $(document).ready(function(){
     
     function calcRank(){
         
-        var newSkillRating = $("#input_newSkillRating").value;
+        console.log(skillRating);
+        
+        var newSkillRating = $("#input_newSkillRating").val();
+        
+        var rankSign;
+        
+        if(parseInt(newSkillRating) > parseInt(skillRating)){
+            console.log(newSkillRating + "/" + skillRating);
+            rankSign = "+";
+        }
+        else if(parseInt(newSkillRating) < parseInt(skillRating)){
+            console.log(newSkillRating + "/" + skillRating);
+            rankSign = "-";
+        }
+        else {
+            rankSign = "";
+        }
+        
+        console.log(newSkillRating);
         
         var convertRank = skillRating - newSkillRating;
         
-        var rankDifference = math.abs(convertRank);
+        var rankDifference = Math.abs(convertRank);
         
         skillRating = newSkillRating;
         
-        $("#skillRating_Output").append(skillRating);
+        $("#cs_skillRating").html(skillRating);
         
-        $("#skillDifference_Output").append(skillRating);
+        console.log(skillRating);
+        
+        $("#skillDifference_Output").html(rankSign + rankDifference);
+        
+        if(document.getElementById('skillDifference_Output').innerHTML.indexOf("-")){
+            $("#skillDifference_Output").css("color","green");
+        }
+        else if(document.getElementById('skillDifference_Output').innerHTML.indexOf("+")){
+            $("#skillDifference_Output").css("color","red");
+        }
+        else {
+            $("#skillDifference_Output").css("color","black");
+        }
         
         if(skillRating <= 1499){
             skillRank = "Bronze";
@@ -84,6 +114,13 @@ $(document).ready(function(){
             alert("Error");
         }
         
+        console.log(skillRank);
+        
+        $("#cs_skillRank").html(skillRank);
     };
+    
+    $("#submit_newSkill").click(function(){
+        calcRank();
+    });
     
 });
