@@ -1,4 +1,4 @@
-#Design Plan
+# Design Plan
 
 The SR Tracker should match Overwatch design-wise from the graphic interface to the font to the color schemes. So some goals:
 
