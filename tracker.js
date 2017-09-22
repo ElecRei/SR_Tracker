@@ -1,10 +1,16 @@
 $(document).ready(function(){
     
+    // Preset Displays
+    
     $("#output_currentStats").hide();
+    
+    // Global Variables
    
     var batteTag; // Name used ingame
     var skillRating; // SR number
     var skillRank; // SR rank (Bronze, Silver, Gold)
+    
+    // Inital Form Submit
     
     $("#submit_form").click(function(){
         
@@ -44,6 +50,12 @@ $(document).ready(function(){
         $("#output_currentStats").show();
         
     });
+    
+    // Skill Rank Calculation Function
+    // ===============================
+    // Calculates the difference between your new and old skill ratings.
+    // Updates with the new rating, rank if applicable and the difference
+    // between then.
     
     function calcRank(){
         
@@ -118,6 +130,8 @@ $(document).ready(function(){
         
         $("#cs_skillRank").html(skillRank);
     };
+    
+    // Initializes Skill Rank Calculation
     
     $("#submit_newSkill").click(function(){
         calcRank();
