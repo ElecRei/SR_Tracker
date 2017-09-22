@@ -14,12 +14,13 @@ As a start it will be a simple static calculator that won't save any data the us
 That's it for now because if I keep going I'll too many things to this project and not finish it.
 
 ## Updates
-
+<span style="color:lightgrey">
 + *9/21/2017*
   + Repo Created
   + Readme Updated
   + Tracker JS file uploaded
   + Main HTML file uploaded
   + HTML and JS file update
+</span>
 
 
