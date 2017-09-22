@@ -2,7 +2,7 @@ SR_Tracker
 ======
 Tracks skill rating gains and losses for Overwatch
 
-**Date started**:*9/21/2017*
+**Date started**: *9/21/2017*
 
 
 ## Purpose
