@@ -13,6 +13,11 @@ As a start it will be a simple static calculator that won't save any data the us
 
 That's it for now because if I keep going I'll too many things to this project and not finish it.
 
+## Bulletin Board
+
+- **Any major changes to layout or design should be kept on separate branch.**
+- **Any major changes to JS should be kept on separate branch.**
+
 ## Updates
 
 + *9/22/2017*
