@@ -1,10 +1,16 @@
 $(document).ready(function(){
     
+    // Preset Displays
+    
     $("#output_currentStats").hide();
+    
+    // Global Variables
    
     var batteTag; // Name used ingame
     var skillRating; // SR number
     var skillRank; // SR rank (Bronze, Silver, Gold)
+    
+    // Inital Form Submit
     
     $("#submit_form").click(function(){
         
@@ -45,13 +51,24 @@ $(document).ready(function(){
         
     });
     
+    // Skill Rank Calculation Function
+    // ===============================
+    // Calculates the difference between your new and old skill ratings.
+    // Updates with the new rating, rank if applicable and the difference
+    // between then.
+    
     function calcRank(){
         
-        console.log(skillRating);
+        // Create variable for new skill rating
         
         var newSkillRating = $("#input_newSkillRating").val();
         
+        // Create variable that will hold the "+" or "-" sign
+        
         var rankSign;
+        
+        // Check which sign is needed and insert that into the
+        // rankSign variable.
         
         if(parseInt(newSkillRating) > parseInt(skillRating)){
             console.log(newSkillRating + "/" + skillRating);
@@ -65,11 +82,14 @@ $(document).ready(function(){
             rankSign = "";
         }
         
-        console.log(newSkillRating);
+        // Create convertRank variable to do the math, put the results of that variable
+        // into rankDifference to change it into an absolute number (remove negative integers).
         
         var convertRank = skillRating - newSkillRating;
         
         var rankDifference = Math.abs(convertRank);
+        
+        // Put new result in the skillRating variable.
         
         skillRating = newSkillRating;
         
@@ -118,6 +138,8 @@ $(document).ready(function(){
         
         $("#cs_skillRank").html(skillRank);
     };
+    
+    // Initializes Skill Rank Calculation
     
     $("#submit_newSkill").click(function(){
         calcRank();
