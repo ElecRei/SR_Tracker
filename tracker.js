@@ -91,6 +91,8 @@ $(document).ready(function(){
         
         // Put new result in the skillRating variable.
         
+        // Put new result in the skillRating variable.
+        
         skillRating = newSkillRating;
         
         $("#cs_skillRating").html(skillRating);
