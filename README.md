@@ -20,6 +20,13 @@ That's it for now because if I keep going I'll add too many things to this proje
 
 ## Updates
 
++ *9/26/2017*
+  + New file structure created:
+    + root for lives files.
+    + source for unconfirmed design, unoptimized images, etc.
+    + misc for the odd project that isn't fully fleshed out.
+  + New branches made for Design and JS changes.
+
 + *9/22/2017*
   + Branch created to test new changes
   + Updated files committed to new branch (ElecRei-test-1)
