@@ -1,0 +1,65 @@
+<html>
+
+    <head>
+        <title>SR Tracker</title>
+        
+        <link rel="stylesheet" type="text/css" href="styling.css" />
+        
+        <script
+          src="http://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+        </script>
+        
+        <!-- JS file for tacker functionality -->
+        <script src="tracker.js"></script>
+        
+    </head>
+
+    <body>
+    
+        <div id="site_wrapper">
+        
+            <form id="form_entry">
+                <fieldset>
+                    <legend>Current Comp Stats</legend>
+                    BattleTag:<br/>
+                    <input type="text" id="input_battleTag" placeholder="i.e. User#1234"/><br/>
+                    Skill Rating:<br/>
+                    <input type="text" id="input_skillRating" placeholder="0"/><br/>
+                    <button type="button" id="submit_form">Submit</button>
+                </fieldset>
+            </form>
+            
+            <div id="output_currentStats">
+                <fieldset>
+                    <legend>Updated Comp Stats</legend>
+                    <div id="cs_battleTag"></div>
+                    <div id="cs_skillRating"></div>
+                    <div id="cs_skillRank"></div>
+                    Skill Rating Difference:<br>
+                    <div id="skillDifference_Output">----</div>
+                </fieldset>
+
+            </div>
+            
+            <form id="form_newSkill">
+                <fieldset>
+                    <legend>SR Calculator</legend>
+                    New Skill Rating;<br/>
+                    <input type="text" id="input_newSkillRating" placeholder="0"/><br/>
+                    <button type="button" id="submit_newSkill">Update</button>
+                </fieldset>
+            </form>
+        
+        </div>
+        
+        <div id="background_switch">
+            <h4>BG Switch</h4?>
+            <button type="button" class="btn" id="btn_bg_on">On</button>
+            <button type="button" class="btn" id="btn_bg_off">Off</button>
+        </div>
+    
+    </body>
+
+</html>
